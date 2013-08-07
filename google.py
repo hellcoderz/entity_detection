@@ -32,3 +32,4 @@ if __name__ =="__main__":
 		sr = search_google(test)
 		rw = remove_wiki(sr)
 		pprint.pprint(rw)
+		print "DONE"
