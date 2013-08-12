@@ -16,7 +16,7 @@ def nlp(bigram, sent):
 	return entity
 
 if __name__ == "__main__":
-	s = "watch the notebook"
+	s = "watch simpsons"
 	
 	bigram = ngrams(s, n=2)
 	sres = gsearch.search_google(s)
