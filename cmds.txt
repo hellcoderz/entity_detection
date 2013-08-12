@@ -1,0 +1,5 @@
+watch,PLAY
+turn to,PLAY
+tune to,PLAY
+next game,LSG
+when is the next game,LSG

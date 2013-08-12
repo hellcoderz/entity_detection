@@ -5,5 +5,6 @@ tests = [
 	"watch dr who",
 	"more movies like batman begins",
 	"show all simpsons",
-	"watch lord of rings "
+	"watch lord of rings",
+	"watch nbc"
 ]
