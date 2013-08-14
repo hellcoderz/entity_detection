@@ -1,23 +1,26 @@
 from pattern.search import search
 from pattern.en import ngrams
 import gsearch
+import sys
 
 def nlp(bigram, sent):
 	entity = []
 
 	for tup in bigram:
 		txt = " ".join(tup)
-		print txt
+		#print txt
 		m = search(txt, sent)
 		if m:
 			entity.append(txt)
-		print m
+		#print m
 
 	return entity
 
 if __name__ == "__main__":
 	s = "watch simpsons"
-	
+	if len(sys.argv) > 1:
+		s = sys.argv[1]
+
 	bigram = ngrams(s, n=2)
 	sres = gsearch.search_google(s)
 	cmd = ["last channel", "previous channel","tune to", "turn to", "watch"]
@@ -33,4 +36,4 @@ if __name__ == "__main__":
 	else:
 		onegram = ngrams(s, n=1)
 		res = nlp(onegram, sent)
-		print res	
+		print res
